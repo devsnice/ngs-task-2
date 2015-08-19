@@ -31,6 +31,10 @@ gulp.task('html', function() {
     .pipe(gulp.dest('builds/distribution/'))
 });
 
+gulp.task('img', function() {
+  gulp.src('builds/development/img/**/*')
+    .pipe(gulp.dest('builds/distribution/img/'));
+});
 
 gulp.task('watch', function() {
   gulp.watch('builds/development/js/**/*.js', ['js']);
@@ -46,6 +50,7 @@ gulp.task('libs', function() {
 gulp.task('default', [
   'libs',
   'html',
+  'img',
   'js',
   'sass',
   'watch'
