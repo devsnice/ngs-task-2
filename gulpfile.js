@@ -19,7 +19,7 @@ gulp.task('sass', function () {
       .pipe(sass())
       .pipe(concat('style.min.css'))
       .pipe(autoprefixer({
-            browsers: ["last 1 version", "> 1%", "ie 8", "ie 7", "opera 12.1"],
+            browsers: ["last 5 version", "> 0.1%", "ie 8", "ie 7", "opera 10"],
             cascade: false
       }))
       .pipe(csso())

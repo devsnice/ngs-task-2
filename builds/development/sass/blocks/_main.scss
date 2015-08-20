@@ -1,0 +1,27 @@
+.main {
+	max-width: 990px;
+	width: auto;
+	margin: 24px auto;
+	background: #fff;
+	
+	@media(max-width: $medium) {
+		&__wrapper {
+			padding: 40px 32px;
+		}
+	}
+	
+	@media(max-width: $small) {
+		margin: 0;
+	
+		&__wrapper {
+			padding: 40px 12px;
+		}
+		
+	}
+
+	&__wrapper {
+		padding: 40px 38px;
+		width: auto;
+	}
+	
+}
