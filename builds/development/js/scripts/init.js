@@ -1,11 +1,7 @@
 // Инициализация проекта
 (function(){
 	
-	$(document).ready(function() {
-		// Рендор записей на странице
-		var template = Handlebars.compile($('#template-post').html());
-		$('.posts').append(template(data));
-		
+	$(document).ready(function() {		
 		// Установка правильный значений
 		setCountCol();
 		setWidthPostTitle();
@@ -15,7 +11,7 @@
 		$(window).resize(function(){
 			setCountCol();
 			setWidthPostTitle();
-			setHeightPost();
+			setHeightPost(); 
 		});	
 		
 	});
