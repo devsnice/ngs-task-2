@@ -1,6 +1,6 @@
 //
 var setHeightPost = function setHeightPost(){
-		var post = $(".post"),
+		var post = $(".post > a"),
 			countCol = $(".posts").attr("data-col");
 		
 			postHeights = [];

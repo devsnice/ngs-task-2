@@ -1,39 +1,49 @@
 .post {
 	display: inline-block;
-	margin: 0 0 20px 12px;
-	padding: 0 0 20px;
-	border-bottom: 1px solid #dbdbdb;
-	width: 31.5%;
+	margin: 0 0 20px;
+	padding: 0 6px;
+	width: 33.33333%;
 	font-size: 16px;
 	cursor: pointer;
+	box-sizing: border-box;
 	vertical-align: top;
 	transition: 0.4s ease;
 	text-align: left;
 	
 	// ie9+ 
 	&:nth-last-child(1), &:nth-last-child(2), &:nth-last-child(3) {
-		border-bottom: 0;
+		
+		.post__link {
+			border-bottom: 0;	
+		}
 	}
 	
 	@media(max-width: $medium) {
-		width: 46.5%;
+		width: 50%;
 		
-		&:nth-last-child(3) {
-			border-bottom: 1px solid #dbdbdb;
+		.post__link {
+			&:nth-last-child(3) {
+				border-bottom: 1px solid #dbdbdb;
+			}
 		}
+		
 	}
 
 	@media(max-width: $small) {
 		width: 100%;
 		
-		&:nth-last-child(2) {
-			border-bottom: 1px solid #dbdbdb;
+		.post__link {
+			&:nth-last-child(2) {
+				border-bottom: 1px solid #dbdbdb;
+			}
 		}
 	}
 	
 	
 	&__link {
 		display: block;
+		padding-bottom: 20px;
+		border-bottom: 1px solid #dbdbdb;
 		
 		&:hover {
 			.post {
@@ -53,7 +63,7 @@
 					color: #d2c4c1;
 				}
 			}
-		}	
+		}
 	}
 	
 	
@@ -82,9 +92,9 @@
 	&__image {
 		width: 100%;
 		margin: 7px 0;
-		border: 1px solid #4dacdd;
-
+		
 		img {
+			border: 1px solid #4dacdd;
 			width: 100%;
 		}
 	}

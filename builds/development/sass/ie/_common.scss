@@ -1,9 +1,16 @@
-.ie8_all {
+.ie8{
 	
 	.main {
 		min-width: 600px;
 	}
 	.post {
-		margin: 0 1.21% 20px 0; // (12 / 990)*100
-	}
+		margin: 0 0 20px; 
+		padding: 0 0.6% 20px; // (12 / 990 * 100 %)
+	}	
+}
+
+.ie7 {
+	.post {
+		width: 32%;
+	}	
 }
