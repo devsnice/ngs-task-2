@@ -20,9 +20,9 @@
 	
 	@media(max-width: $medium) {
 		width: 50%;
-		
-		.post__link {
-			&:nth-last-child(3) {
+	
+		&:nth-last-child(3) {
+			.post__link {
 				border-bottom: 1px solid #dbdbdb;
 			}
 		}
@@ -32,8 +32,8 @@
 	@media(max-width: $small) {
 		width: 100%;
 		
-		.post__link {
-			&:nth-last-child(2) {
+		&:nth-last-child(2) {
+			.link__post {
 				border-bottom: 1px solid #dbdbdb;
 			}
 		}
